@@ -1,57 +1,71 @@
-```html
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skarphæk</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skarphæk</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Arial, sans-serif;
+      background: #111;
+    }
 
-        body {
-            background: url('skarphaek01.png') center center no-repeat;
-            background-size: cover;
-        }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
 
-        .contact {
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
-        }
+    .page {
+      text-align: center;
+      width: 100%;
+    }
 
-        .contact a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            background: rgba(0,0,0,0.5);
-            padding: 12px 18px;
-            border-radius: 8px;
-        }
+    .hero-image {
+      max-width: 100%;
+      max-height: 82vh;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
 
-        .contact a:hover {
-            background: rgba(0,0,0,0.8);
-        }
-    </style>
+    .contact {
+      margin-top: 22px;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px 20px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+
+    .contact a:hover {
+      background: rgba(255, 255, 255, 0.28);
+    }
+  </style>
 </head>
 
 <body>
+  <main class="page">
+    <img src="skarphaek01.png" alt="Skarphæk" class="hero-image" />
 
-<div class="contact">
-    <a href="mailto:kontakt@skarphaek.nu">Kontakt</a>
-</div>
-
+    <div class="contact">
+      <a href="mailto:kontakt@skarphaek.nu">Kontakt</a>
+    </div>
+  </main>
 </body>
 </html>
-```
