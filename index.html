@@ -1,71 +1,78 @@
+```html
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skarphæk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skarp Hæk</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+body {
+    margin: 0;
+    background: #111;
+    font-family: Arial, sans-serif;
+}
 
-    html,
-    body {
-      margin: 0;
-      min-height: 100%;
-      font-family: Arial, sans-serif;
-      background: #111;
-    }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 24px;
-    }
+.poster {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
 
-    .page {
-      text-align: center;
-      width: 100%;
-    }
+.contact {
+    margin-top: 25px;
+}
 
-    .hero-image {
-      max-width: 100%;
-      max-height: 82vh;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-    }
+.contact a {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #7fbf1f;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
 
-    .contact {
-      margin-top: 22px;
-    }
+.contact a:hover {
+    background: #6ca317;
+}
 
-    .contact a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 12px 20px;
-      border-radius: 999px;
-      display: inline-block;
-    }
-
-    .contact a:hover {
-      background: rgba(255, 255, 255, 0.28);
-    }
-  </style>
+.footer {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 14px;
+}
+</style>
 </head>
 
 <body>
-  <main class="page">
-    <img src="skarphaek01.png" alt="Skarphæk" class="hero-image" />
+
+<div class="container">
+
+    <img src="skarphaek01.png" alt="Skarp Hæk" class="poster">
 
     <div class="contact">
-      <a href="mailto:kontakt@skarphaek.nu">Kontakt</a>
+        <a href="mailto:kontakt@skarphaek.nu?subject=Forespørgsel%20på%20hækklipning">
+            Kontakt os
+        </a>
     </div>
-  </main>
+
+    <div class="footer">
+        kontakt@skarphaek.nu
+    </div>
+
+</div>
+
 </body>
 </html>
+```
