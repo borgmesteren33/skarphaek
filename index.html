@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skarp Hæk</title>
+
+<title>Skarp Hæk | Professionel Hækklipning</title>
+
+<meta name="description" content="Professionel hækklipning med omhu. Vi klipper liguster, bøg, thuja og alle typer hække. Kontakt os for et uforpligtende tilbud.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPTZ8YJV3P"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-BPTZ8YJV3P');
+</script>
 
 <style>
+
 body{
     margin:0;
     background:#111;
@@ -86,6 +101,10 @@ textarea{
     cursor:pointer;
 }
 
+.send-btn:hover{
+    background:#6ca317;
+}
+
 .close-btn{
     float:right;
     font-size:24px;
@@ -95,88 +114,115 @@ textarea{
 .footer{
     color:#ccc;
     margin-top:20px;
+    line-height:1.8;
 }
+
 .footer a{
-    color:#ccc;
+    color:#fff;
     text-decoration:none;
     font-weight:bold;
 }
+
+.footer a:hover{
+    color:#7fbf1f;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <img src="skarphaek01.png" alt="Skarp Hæk" class="poster">
+<img src="skarphaek01.png" alt="Skarp Hæk" class="poster">
 
-    <button class="contact-btn" onclick="openForm()">
-        Kontakt os
-    </button>
+<button class="contact-btn" onclick="openForm()">
+Kontakt os
+</button>
 
-    <div class="footer">
-        <a href="tel:+4522290099">📞 222 900 99</a><br>
-        kontakt@skarphaek.nu
-    </div>
+<div class="footer">
+
+<a href="tel:+4522290099">
+📞 222 900 99
+</a>
+
+<br>
+
+<a href="mailto:kontakt@skarphaek.nu">
+kontakt@skarphaek.nu
+</a>
+
+</div>
 
 </div>
 
 <div class="modal" id="contactModal">
-    <div class="modal-content">
 
-        <span class="close-btn" onclick="closeForm()">&times;</span>
+<div class="modal-content">
 
-        <h2>Kontakt Skarp Hæk</h2>
+<span class="close-btn" onclick="closeForm()">&times;</span>
 
-        <form action="https://formspree.io/f/xpqgwwdj" method="POST">
-        <input type="hidden" name="_next" value="https://www.skarphaek.nu/tak.html">
-            
-            <input
-                type="text"
-                name="Navn"
-                placeholder="Dit navn"
-                required>
+<h2>Kontakt Skarp Hæk</h2>
 
-            <input
-                type="email"
-                name="Email"
-                placeholder="Din e-mail"
-                required>
+<form action="https://formspree.io/f/xpqgwwdj" method="POST">
 
-            <input
-                type="tel"
-                name="Telefon"
-                placeholder="Telefonnummer">
+<input
+type="hidden"
+name="_next"
+value="https://www.skarphaek.nu/tak.html">
 
-            <textarea
-                name="Besked"
-                placeholder="Hvordan kan vi hjælpe?"
-                required></textarea>
+<input
+type="text"
+name="Navn"
+placeholder="Dit navn"
+required>
 
-            <button type="submit" class="send-btn">
-                Send besked
-            </button>
+<input
+type="email"
+name="Email"
+placeholder="Din e-mail"
+required>
 
-        </form>
+<input
+type="tel"
+name="Telefon"
+placeholder="Telefonnummer">
 
-    </div>
+<textarea
+name="Besked"
+placeholder="Hvordan kan vi hjælpe?"
+required></textarea>
+
+<button
+type="submit"
+class="send-btn">
+Send besked
+</button>
+
+</form>
+
+</div>
+
 </div>
 
 <script>
+
 function openForm(){
-    document.getElementById('contactModal').style.display='block';
+document.getElementById("contactModal").style.display="block";
 }
 
 function closeForm(){
-    document.getElementById('contactModal').style.display='none';
+document.getElementById("contactModal").style.display="none";
 }
 
 window.onclick=function(event){
-    const modal=document.getElementById('contactModal');
-    if(event.target===modal){
-        modal.style.display='none';
-    }
+const modal=document.getElementById("contactModal");
+if(event.target===modal){
+modal.style.display="none";
 }
+}
+
 </script>
 
 </body>
